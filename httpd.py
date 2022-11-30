@@ -204,7 +204,7 @@ class SimpleServer:
         :param workers_n:
         :return:
         """
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         async with AioPool(size=workers_n, loop=loop) as pool:
             while True:
                 client, _ = await loop.sock_accept(self.server)
