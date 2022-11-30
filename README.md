@@ -22,12 +22,12 @@ as async coroutines pool.
 httpd.py usage: httpd.py [-h] [-i] [-p] [-w] [-r] [-l]
 ```
 #### Options:
-  * -h, --help        show help message and exit
-  * -i , --ip         Host address (default `localhost`)
-  * -p , --port       Port to listen (default `8080`)
-  * -w , --workers    Number of workers to execute (default `8`)
-  * -r , --doc_root   Path to documents root (default `.`)
-  * -l , --log        Path to log file (default `./.tmp/logs/logs.txt`)
+  * `-h, --help` - _show help message and exit_
+  * `-i , --ip` - _Host address_ (default `localhost`)
+  * `-p , --port` - _Port to listen_ (default `8080`)
+  * `-w , --workers` - _Number of workers to execute_ (default `8`)
+  * `-r , --doc_root` - _Path to documents root_ (default `.`)
+  * `-l , --log` - _Path to log file_ (default `./.tmp/logs/logs.txt`)
 
 ## Test
 
@@ -136,5 +136,5 @@ docker run -ti --name otpypro-webserver \
 -p 8080:8080 \
 otpypro-webserver sh
 ```
-* [Run server](README.md:19)
-* [Run tests](README.md:32)
+* Run server
+* Run tests
